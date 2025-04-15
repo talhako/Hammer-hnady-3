@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hammer Handy - Ihr Mobilfunkexperte in Waidhofen/Ybbs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .brand-color { background-color: #768DF1; }
+        iframe { height: 400px; border: 0; }
+        .chat-btn { position: fixed; bottom: 20px; right: 20px; }
+        
+        /* Neue Styles */
+        .scroll-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 15px 0;
+        }
+        .review-card {
+            display: inline-block;
+            width: 300px;
+            margin-right: 15px;
+            vertical-align: top;
+            white-space: normal;
+        }
+        .footer-scroll {
+            background: #f8f9fa;
+            padding: 20px 0;
+        }
+        .panorama-container {
+            height: 500px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark brand-color">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hammer Handy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Über uns</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Bewertungen</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 360° Panorama Ansicht -->
+    <section class="panorama-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!4v1718287397030!6m8!1m7!1sCAoSLEFGMVFpcE5fLWJQRlJvY2J1T0l6T1JjMEdtWW9zNkZ1M2x1VU5nWkFm!2m2!1d47.9590719!2d14.7688464!3f133.45407!4f13.739999999999995!5f0.7820865974627469" 
+            width="100%" 
+            height="100%"
+            allowfullscreen
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home" class="py-5">
+        <div class="container text-center">
+            <h1>Ihr Partner für Mobilfunk in Waidhofen/Ybbs</h1>
+            <p class="lead">Smartphones · Verträge · Reparaturen · Zubehör</p>
+        </div>
+    </section>
+
+    <!-- Contact Section - Korrigierte Telefonnummer -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="mb-4">Kontakt</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Kontaktdaten</h4>
+                    <p>
+                        <strong>Adresse:</strong><br>
+                        Hoher Markt 35<br>
+                        3340 Waidhofen an der Ybbs<br>
+                        <a href="https://maps.app.goo.gl/oo4ZAprb5nGLr4Jw6" target="_blank">In Google Maps öffnen</a>
+                    </p>
+                    <p>
+                        <strong>Telefon:</strong><br>
+                        <a href="tel:+43744463304">+43 7444 63304</a> <!-- Korrigierte Nummer -->
+                    </p>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.324430706729!2d14.7688464!3d47.9590719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47711166b4b382c1%3A0x8a7a1ef61b4cc1d3!2sHammer%20Handy!5e0!3m2!1sde!2sat!4v1718287397030!5m2!1sde!2sat" 
+                        width="100%" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="col-md-6">
+                    <h4>Kontaktformular</h4>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="E-Mail" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Telefon">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Nachricht" required></textarea>
+                        </div>
+                        <button type="submit" class="btn brand-color text-white">Senden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scrollbare Bewertungen -->
+    <section id="reviews" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">Kundenbewertungen</h2>
+            <div class="scroll-container">
+                <div class="review-card card">
+                    <div class="card-body">
+                        <h5 class="card-title">★★★★★</h5>
+                        <p class="card-text">"Ausgezeichneter Service! Schnelle Reparatur und freundliche Beratung."</p>
+                        <p class="text-muted">- Max Mustermann</p>
+                    </div>
+                </div>
+                <!-- Weitere Bewertungen -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer mit Scrollbereich -->
+    <footer class="footer-scroll">
+        <div class="container">
+            <div class="scroll-container">
+                <span class="me-4">📱 20 Jahre Erfahrung</span>
+                <span class="me-4">🔧 Reparatur-Service</span>
+                <span class="me-4">📶 Mobilfunk-Spezialist</span>
+                <span class="me-4">💯 Zufriedenheitsgarantie</span>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p>© 2024 Hammer Handy<br>Alle Rechte vorbehalten</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="text-dark me-3">Impressum</a>
+                    <a href="#" class="text-dark">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Button -->
+    <button class="chat-btn btn brand-color text-white rounded-pill shadow">
+        Live Chat <span class="badge bg-light text-dark">Online</span>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
